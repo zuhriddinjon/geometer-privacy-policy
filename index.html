@@ -2,27 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Privacy Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy – GeoMeter: Land Area Measure</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; line-height: 1.55; max-width: 820px; margin: auto; padding: 20px; color: #1b1b1b; }
+        h1 { margin-bottom: 4px; }
+        h2 { margin-top: 28px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; }
+        th { background: #f2f2f2; }
+        .meta { color: #555; }
+    </style>
 </head>
-<body style="font-family: Arial; max-width: 800px; margin: auto; padding: 20px;">
+<body>
     <h1>Privacy Policy</h1>
+    <p class="meta"><strong>App:</strong> GeoMeter: Land Area Measure (package name <code>uz.geometer.app</code>)<br>
+       <strong>Developer:</strong> Doston<br>
+       <strong>Contact:</strong> <a href="mailto:zuhriddinjonrayimjonov@gmail.com">zuhriddinjonrayimjonov@gmail.com</a><br>
+       <strong>Last updated:</strong> October 9, 2026</p>
 
-    <p>This application collects and uses location data to provide accurate land measurement functionality.</p>
+    <p>This Privacy Policy explains how the Android app <strong>GeoMeter: Land Area Measure</strong>
+    (the "App"), published on Google Play by the developer <strong>Doston</strong> ("we", "us"),
+    accesses, collects, uses, stores and shares information when you use the App.
+    It applies only to this App.</p>
 
-    <h2>Information We Collect</h2>
+    <h2>1. Information the App accesses or collects</h2>
+    <table>
+        <tr><th>Data</th><th>When</th><th>Purpose</th></tr>
+        <tr>
+            <td><strong>Precise and approximate location (GPS)</strong></td>
+            <td>Only after you grant location permission and while you measure. When you walk a boundary, a
+                foreground service with a visible notification keeps recording points while the screen is off.</td>
+            <td>To place points on the map and calculate land area, perimeter and distance. Location is
+                processed on your device and is not sent to us, except as the points of measurements you choose
+                to back up (see "Cloud backup").</td>
+        </tr>
+        <tr>
+            <td><strong>Saved measurements</strong> (name, points/coordinates, area, distance, dates)</td>
+            <td>When you save a measurement.</td>
+            <td>Stored locally on your device. Uploaded only if you turn on Cloud backup.</td>
+        </tr>
+        <tr>
+            <td><strong>Google account details</strong> (email address, account identifier)</td>
+            <td>Only if you choose "Sign in with Google" for Cloud backup.</td>
+            <td>To identify your backup and sync your measurements across your devices.</td>
+        </tr>
+        <tr>
+            <td><strong>Support messages</strong> (the text you write, and the name and phone number if you
+                choose to enter them)</td>
+            <td>Only when you contact us through the in-app support chat.</td>
+            <td>To answer your question and keep the conversation history.</td>
+        </tr>
+        <tr>
+            <td><strong>Device and app information</strong> (device brand and model, Android version, app version,
+                Android device ID, push notification token)</td>
+            <td>Sent together with support chat messages.</td>
+            <td>To identify your conversation, diagnose problems and notify you when we reply.</td>
+        </tr>
+        <tr>
+            <td><strong>App usage and diagnostics</strong> (app interactions such as screens opened and features
+                used, chosen settings such as language, theme and unit, crash logs, performance data, app instance
+                identifiers)</td>
+            <td>Automatically while you use the App.</td>
+            <td>To understand which features are used, fix crashes and improve the App.</td>
+        </tr>
+    </table>
+    <p>The App does not collect your contacts, photos, files, messages, microphone or camera data,
+    and it does not sell personal data or use it for advertising. The App does not show ads.</p>
+
+    <h2>2. Third-party services</h2>
+    <p>The App uses the following services provided by Google, which process data on our behalf
+    under their own privacy terms:</p>
     <ul>
-        <li>Location data (GPS)</li>
+        <li><strong>Google Maps SDK for Android</strong> – map display (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>)</li>
+        <li><strong>Google Play services Location</strong> – GPS location</li>
+        <li><strong>Firebase Authentication</strong> and <strong>Google Sign-In / Credential Manager</strong> – optional sign-in for Cloud backup</li>
+        <li><strong>Cloud Firestore</strong> – storage of backed-up measurements and support chat messages</li>
+        <li><strong>Google Analytics for Firebase</strong> – usage statistics</li>
+        <li><strong>Firebase Crashlytics</strong> – crash reports</li>
+        <li><strong>Firebase Cloud Messaging</strong>, <strong>Firebase In-App Messaging</strong> and <strong>Firebase Remote Config</strong> – notifications, in-app announcements and configuration</li>
+    </ul>
+    <p>See <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a> for details.
+    Apart from these service providers, we do not share your data with third parties, unless required by law.</p>
+
+    <h2>3. Cloud backup</h2>
+    <p>Cloud backup is optional. If you sign in with Google, your saved measurements are stored in Cloud Firestore
+    under your account so they can be restored and synced. Each account can access only its own data.
+    You can sign out at any time in Settings; your measurements then stay only on your device.</p>
+
+    <h2>4. Data security</h2>
+    <p>All data sent by the App is encrypted in transit (HTTPS/TLS). Access to stored data is restricted by
+    security rules and limited to the developer for support purposes.</p>
+
+    <h2>5. Data retention and deletion</h2>
+    <ul>
+        <li>Measurements stored on your device are deleted when you delete them in the App or uninstall the App.</li>
+        <li>Backed-up measurements and support chat history are kept until you ask us to delete them.</li>
+        <li>Analytics and crash data are kept by Google for a limited period (analytics data up to 14 months, crash data up to 90 days).</li>
+    </ul>
+    <p>To delete your account, your backed-up measurements or your support chat history, email
+    <a href="mailto:zuhriddinjonrayimjonov@gmail.com">zuhriddinjonrayimjonov@gmail.com</a> with the subject
+    "GeoMeter data deletion" and the Google account email you used (or describe your support conversation).
+    We will delete the data within 30 days.</p>
+
+    <h2>6. Your choices</h2>
+    <ul>
+        <li>You can deny or revoke the location permission in Android settings; measuring by GPS will then not be possible, but you can still place points on the map manually.</li>
+        <li>You can disable notifications in Android settings.</li>
+        <li>You do not have to sign in or use the support chat to use the App.</li>
     </ul>
 
-    <h2>How We Use Information</h2>
-    <ul>
-        <li>To measure land area and distances</li>
-    </ul>
+    <h2>7. Children</h2>
+    <p>The App is not directed to children under 13 and we do not knowingly collect personal data from children.
+    If you believe a child has provided us personal data, contact us and we will delete it.</p>
 
-    <h2>Data Sharing</h2>
-    <p>We do not share user data with third parties.</p>
+    <h2>8. Changes to this policy</h2>
+    <p>We may update this Privacy Policy. Changes are posted on this page with a new "Last updated" date.</p>
 
-    <h2>Contact</h2>
-    <p>Email: zuhriddinjonrayimjonov@gmail.com</p>
+    <h2>9. Contact</h2>
+    <p>Developer: Doston<br>
+    App: GeoMeter: Land Area Measure (<code>uz.geometer.app</code>)<br>
+    Email: <a href="mailto:zuhriddinjonrayimjonov@gmail.com">zuhriddinjonrayimjonov@gmail.com</a></p>
 </body>
 </html>
